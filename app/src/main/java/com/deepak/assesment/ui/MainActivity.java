@@ -3,6 +3,8 @@ package com.deepak.assesment.ui;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -10,10 +12,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import android.Manifest;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -30,9 +36,6 @@ import com.deepak.assesment.utils.NetworkReceiver;
 import com.deepak.assesment.viewmodel.ItemViewModel;
 import com.deepak.assesment.viewmodel.ItemViewModelFactory;
 import com.deepak.assesment.worker.FetchDataWorker;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements NetworkReceiver.N
     private int currentPage = 1;
     private Toolbar toolbar;
     private FirebaseAuth firebaseAuth;
+    private final int REQUEST_NOTIFICATION_PERMISSION = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +70,17 @@ public class MainActivity extends AppCompatActivity implements NetworkReceiver.N
         userAdapter = new ItemAdapter(new ArrayList<>()); // Initialize with an empty list
         recyclerView.setAdapter(userAdapter);
 
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            // Check if the permission is already granted
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                // Request the permission
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                        REQUEST_NOTIFICATION_PERMISSION);
+            }
+        }
 
         // Initialize and register the NetworkReceiver
         networkReceiver = new NetworkReceiver(this);
@@ -268,4 +283,18 @@ public class MainActivity extends AppCompatActivity implements NetworkReceiver.N
         super.onDestroy();
         unregisterReceiver(networkReceiver);
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_NOTIFICATION_PERMISSION) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, you can send notifications
+            } else {
+                // Permission denied, handle accordingly
+            }
+        }
+    }
+
 }
