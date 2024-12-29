@@ -117,6 +117,8 @@ public class MainActivity extends AppCompatActivity implements NetworkReceiver.N
                 isLoading = false; // Data loaded, hide the progress bar
                 progressBar.setVisibility(View.GONE); // Hide progress bar
             } else {
+                isLoading = false;
+                progressBar.setVisibility(View.GONE);
                 Log.d("MainActivity", "No users loaded or empty list"); // Debug log
             }
         });
