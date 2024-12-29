@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
                         .addOnCompleteListener(task -> {
                             if (task.isSuccessful()) {
                                 progressBar.setVisibility(View.GONE);
-                                startActivity(new Intent(this, MainActivity.class));
+                                startActivity(new Intent(this, LoginActivity.class));
                                 Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
                                 finish();
                             } else {
