@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity implements NetworkReceiver.N
                 super.onScrolled(recyclerView, dx, dy);
 
                 if (!MyNetworkUtils.isNetworkAvailable(context)){
-                    Toast.makeText(context, "No internet connection. Please check your network.", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, "No internet connection. Please check your network.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
