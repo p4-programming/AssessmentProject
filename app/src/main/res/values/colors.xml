@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--New Color-->
+
+    <color name="heading">#383838</color>
+    <color name="content_moduleheading">#5e5e5e</color>
+    <color name="placeholder">#999999</color>
+    <color name="line">#BBBBBB</color>
+    <color name="colorGreyBordar">#dcdcdc</color>
+    <color name="activeorange">#ef5a2f</color>
+    <color name="fadedorange">#FFE3DB</color>
+    <color name="inactiveorange">#F6AB96</color>
+    <color name="placeholderbackground">#F5F5F5</color>
+    <color name="green">#56B31A</color>
+    <color name="green_lime">#6BC120</color>
+    <color name="orange_lime">#EF5F35</color>
+    <color name="white">#ffffff</color>
+    <color name="registrationtextcolor">#5e5e5e</color>
+    <color name="searchplaceholder">#ebebeb</color>
+    <color name="blackGrey">#636363</color>
+    <color name="background_light">#eeeeee</color>
+    <color name="titleTabColor">#000000</color>
+    <color name="titleSelectedTabColor">#3F51B5</color>
+
+    <color name="colorBlueLight">#d6e3ff</color>
+
+
+    <color name="text_box_color">#666666</color>
+    <color name="black_color">#383838</color>
+    <color name="black">#000000</color>
+    <color name="disable">#bbbbbb</color>
+    <color name="User">#ed5c38</color>
+    <color name="User_fill">#2fd19b</color>
+    <color name="System">#38afec</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="lightPink">#FDF8F4</color>
+    <color name="red">#FF0000</color>
+    <color name="moduleheading">#707070</color>
+    <color name="rejectedcolor">#ba0000</color>
+    <color name="transparent">#60000000</color>
+    <color name="searchTabBack">#ebebeb</color>
+    <color name="pureBlack">#000000</color>
+    <color name="invalidemailid">#C90000</color>
+
+
+    <!--welcome slider-->
+
+    <!--    <color name="colorPrimary">#3F51B5</color>-->
+    <!--    <color name="colorPrimaryDark">#303F9F</color>-->
+    <!--    <color name="colorAccent">#FF4081</color>-->
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="rate_value_color">#1B7F57</color>
+
+    <color name="drag_drop_status">#fffbf7</color>
+
+    <array name="array_dot_active">
+        <item>@color/activeorange</item>
+        <item>@color/activeorange</item>
+        <item>@color/activeorange</item>
+        <item>@color/activeorange</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/placeholder</item>
+        <item>@color/placeholder</item>
+        <item>@color/placeholder</item>
+        <item>@color/placeholder</item>
+    </array>
+    <color name="view">#bbbbbb</color>
+
+    <color name="disableEchelonColor">#ED9999</color>//eec4c5//ED9999
+    <color name="grayF5">#f5f5f5</color>
+    <color name="text_color5e">#5e5e5e</color>
+    <color name="text_hintColor">#999999</color>
+    <color name="black_opacity_color">#9f383838</color>
+    <color name="hint_input_color">#999999</color>
+    <color name="echelonBaseColor">#D20001</color>
+    <color name="fulltransparent">#00000000</color>
+
+    <color name="colorPrimary">#fc7b4a</color>
+    <color name="colorPrimaryDark">#f3f3f3</color>
+    <color name="colorAccent">#fc7b4a</color>
+    <color name="colorgb">#FFF7EB</color>
+    <color name="colorBlack">#4F585D</color>
+    <color name="colorGray">#9B9B9B</color>
+    <color name="colorGrayRated">#eaeaea</color>
+    <color name="colorButton">#fc7b4a</color>
+    <color name="colorLiteRed">#EF5A2F</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorGreen">#3cbb5f</color>
+    <color name="colorLightGray">#EFEFEF</color>
+    <color name="colorGreyBg">#f5f5f5</color>
+    <color name="colorGreyFl">#f9f9f9</color>
+    <color name="colorGrayTextColor">#515a5f</color>
+    <color name="colorLightGrayBit">#E0E0E0</color>
+    <color name="colorLightRed">#77FF9C9C</color>
+    <color name="colorLightGreen">#773BBB5E</color>
+    <color name="colorDarkGreen">#007d01</color>
+    <color name="colorDarkGray">#4F585D</color>
+    <color name="colorBlue">#0635C9</color>
+    <color name="colorGreyTrans">#A84F585D</color>
+    <color name="transcolor">#00000000</color>
+    <color name="colorLightWhite">#fafafa</color>
+    <color name="colorSolidGrey">#dfdfdf</color>
+    <color name="colorGrey80">#3C9B9B9B</color>
+    <color name="colorGreyBlack">#828282</color>
+    <color name="colorAbbeyBlack">#4f585d</color>
+
+    <!--zamitsearch color-->
+
+    <color name="colorBlackDark">#282828</color>
+    <color name="colorOrange">#fc7b4a</color>
+    <color name="colorLightOrange">#ffded2</color>
+    <color name="colorGrey">#9b9b9b</color>
+    <color name="blue">#037ffe</color>
+    <!--Pinal mam-->
+    <color name="colorOrangeBorder">#ffe7de</color>
+    <color name="colorOrangeBackground">#fff7f4</color>
+    <color name="colorTextdarkGrey">#4a4a4a</color>
+    <color name="colorOrangeSQBackground">#ffe7de</color>
+    <color name="colorOrangeSeekbar">#ff7c45</color>
+    <color name="colorDarkGreyText">#2c2c2c</color>
+    <color name="colorBlackTextTitle">#2c2c2c</color>
+    <color name="colorOrangish">#fc7b4a</color>
+
+
+
+    <color name="colorLiteGrayBack">#eaeaea</color>
+
+    <color name="colorGreen2">#007d01</color>
+    <color name="colorGray2">#d8d8d8</color>
+    <color name="colorPick">#fff7f4</color>
+    <color name="colorDarkPick">#ffe7de</color>
+
+    <color name="colorDarkWhite">#fafafa</color>
+
+    <color name="colorDarkgreen">#4c9695</color>
+    <color name="colorDarkPurple">#3d3573</color>
+
+
+    <color name="colorAllBackground">#E5E5E5</color>
+
+    <color name="colorBackgroundScreen">#fafafa</color>
+    <color name="colorProfileBackground">#303030</color>
+    <color name="colorBlackDarkGray">#2f2f2f</color>
+    <color name="errorColor">#f33e3d</color>
+    <color name="gunmetal">#4f585d</color>
+    <color name="colorGreenTextColor">#4c9695</color>
+    <color name="colorGreenMakeFinalschool">#3bbb5e</color>
+
+
+    <color name="colorBlueTextColor">#3d3573</color>
+    <color name="colorDarkYellow">#E3A200</color>
+    <color name="colorDarkGrey">#9b9b9b</color>
+    <color name="colorGreyText">#606060</color>
+    <color name="colorRedSeekBar">#d32a2a</color>
+    <color name="colorBlackDarkNoAlpha">#000000</color>
+    <color name="colorGreenLight">#f4faf3</color>
+    <color name="colorGreySortBg">#e5e5e5</color>
+    <color name="colorGrayText">#515a5f</color>
+    <color name="colorWhite24">#3cffffff</color>
+    <color name="colorBlackGrey">#5e5e5e</color>
+    <color name="colorBlackHalf">#50000000</color>
+
+
+</resources>
+
+

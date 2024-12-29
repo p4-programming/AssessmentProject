@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Assesment" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background color -->
+        <item name="windowSplashScreenBackground">@color/activeorange</item>
+
+        <!-- Set the splash screen icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_background</item>
+
+        <!-- Optional: Set the animation duration -->
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+
+        <!-- Post-splash theme -->
+        <item name="postSplashScreenTheme">@style/Theme.Assesment</item>
+    </style>
+
+    <style name="Theme.Assesment" parent="Base.Theme.Assesment" />
+    <style name="CustomTextInputEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:textColor">@color/activeorange</item>
+        <item name="android:textColorHint">@color/activeorange</item>
+    </style>
+    <style name="CustomMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/activeorange</item>
+    </style>
+</resources>

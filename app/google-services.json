@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "536575112493",
+    "project_id": "loginregisterassement",
+    "storage_bucket": "loginregisterassement.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536575112493:android:e736d674e41becab360fa4",
+        "android_client_info": {
+          "package_name": "com.deepak.assesment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536575112493-4u2mqlifhg6rmi57ona0fpiknejca7tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deepak.assesment",
+            "certificate_hash": "984bbd1acec8acd87d3c013831c97e74bc8a9095"
+          }
+        },
+        {
+          "client_id": "536575112493-po759msqeduvfj7v8or3spqi16oq3c1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS6NZMLWyhfFAiMnwWME5QC1wnHT7eiOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536575112493-po759msqeduvfj7v8or3spqi16oq3c1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
